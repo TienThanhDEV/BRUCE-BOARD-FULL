@@ -1,2 +1,3 @@
 # BRUCE-BOARD-FULL
-Diy bruce boad full
+Sáng tạo bord Bruce Full tính năng.
+
