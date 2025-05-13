@@ -14,7 +14,183 @@ Most ESP32 boards require add-ons, modules, or jumper wires to become useful. Br
 Paired with Bruce Firmware, it becomes a fully-fledged hacking and automation toolkit in your pocket.
 
 ---
+## :computer: List of Features
 
+<details>
+  <summary><h2>WiFi</h2></summary>
+
+- [x] Connect to WiFi
+- [x] WiFi AP
+- [x] Disconnect WiFi
+- [x] [WiFi Atks](https://github.com/pr3y/Bruce/wiki/WiFi#wifi-atks)
+  - [x] [Beacon Spam](https://github.com/pr3y/Bruce/wiki/WiFi#beacon-spam)
+  - [x] [Target Atk](https://github.com/pr3y/Bruce/wiki/WiFi#target-atk)
+    - [x] Information
+    - [x] Target Deauth
+    - [x] EvilPortal + Deauth
+  - [x] Deauth Flood (More than one target)
+- [x] [Wardriving](https://github.com/pr3y/Bruce/wiki/Wardriving)
+- [x] [TelNet](https://github.com/pr3y/Bruce/wiki/WiFi#telnet)
+- [x] [SSH](https://github.com/pr3y/Bruce/wiki/WiFi#ssh)
+- [x] [RAW Sniffer](https://github.com/pr3y/Bruce/wiki/WiFi#raw-sniffer)
+- [x] [TCP Client](https://github.com/pr3y/Bruce/wiki/WiFi#tcp-client)
+- [x] [TCP Listener](https://github.com/pr3y/Bruce/wiki/WiFi#tcp-listener)
+- [x] [DPWO-ESP32](https://github.com/pr3y/Bruce/wiki/WiFi#dpwo-esp32)
+- [x] [Evil Portal](https://github.com/pr3y/Bruce/wiki/WiFi#evil-portal)
+- [x] [Scan Hosts](https://github.com/pr3y/Bruce/wiki/WiFi#evil-portal)
+- [x] [Wireguard Tunneling](https://github.com/pr3y/Bruce/wiki/WiFi#wireguard-tunneling)
+- [x] Brucegotchi
+  - [x] Pwnagotchi friend
+  - [x] Pwngrid spam faces & names
+    - [x] [Optional] DoScreen a very long name and face
+    - [x] [Optional] Flood uniq peer identifiers
+
+</details>
+
+<details>
+  <summary><h2>BLE</h2></summary>
+
+- [X] [BLE Scan](https://github.com/pr3y/Bruce/wiki/BLE#ble-scan)
+- [X] Bad BLE - Run Ducky scripts, similar to [BadUsb](https://github.com/pr3y/Bruce/wiki/Others#badusb)
+- [X] BLE Keyboard - Cardputer and T-Deck Only
+- [X] iOS Spam
+- [X] Windows Spam
+- [X] Samsung Spam
+- [X] Android Spam
+- [X] Spam All
+</details>
+
+
+<details>
+  <summary><h2>RF</h2></summary>
+
+- [x] Scan/Copy
+- [x] [Custom SubGhz](https://github.com/pr3y/Bruce/wiki/RF#replay-payloads-like-flipper)
+- [x] Spectrum
+- [x] Jammer Full (sends a full squared wave into output)
+- [x] Jammer Intermittent (sends PWM signal into output)
+- [x] Config
+    - [X] RF TX Pin
+    - [X] RF RX Pin
+    - [X] RF Module
+        - [x] RF433 T/R M5Stack
+        - [x] [CC1101 (Sub-Ghz)](https://github.com/pr3y/Bruce/wiki/CC1101)
+    - [X] RF Frequency
+- [x] Replay
+</details>
+
+<details>
+  <summary><h2>RFID</h2></summary>
+
+- [x] Read tag
+- [x] Read 125kHz
+- [x] Clone tag
+- [x] Write NDEF records
+- [x] Amiibolink
+- [x] Chameleon
+- [x] Write data
+- [x] Erase data
+- [x] Save file
+- [x] Load file
+- [x] Config
+    - [X] [RFID Module](https://github.com/pr3y/Bruce/wiki/RFID#supported-modules)
+        - [x] PN532
+        - [x] PN532Killer
+- [ ] Emulate tag
+</details>
+
+<details>
+  <summary><h2>IR</h2></summary>
+
+- [x] TV-B-Gone
+- [x] IR Receiver
+- [x] [Custom IR (NEC, NECext, SIRC, SIRC15, SIRC20, Samsung32, RC5, RC5X, RC6)](https://github.com/pr3y/Bruce/wiki/IR#replay-payloads-like-flipper)
+- [x] Config
+    - [X] Ir TX Pin
+    - [X] Ir RX Pin
+</details>
+
+<details>
+  <summary><h2>FM</h2></summary>
+
+- [x] [Broadcast standard](https://github.com/pr3y/Bruce/wiki/FM#play_or_pause_button-broadcast-standard)
+- [x] [Broadcast reserved](https://github.com/pr3y/Bruce/wiki/FM#no_entry_sign-broadcast-rerserved)
+- [x] [Broadcast stop](https://github.com/pr3y/Bruce/wiki/FM#stop_button-broadcast-stop)
+- [ ] [FM Spectrum](https://github.com/pr3y/Bruce/wiki/FM#ocean-fm-spectrum)
+- [ ] [Hijack Traffic Announcements](https://github.com/pr3y/Bruce/wiki/FM#car-hijack-ta)
+- [ ] [Config](https://github.com/pr3y/Bruce/wiki/FM#bookmark_tabs-config)
+</details>
+
+<details>
+  <summary><h2>NRF24</h2></summary>
+
+- [X] [NRF24 Jammer](https://github.com/pr3y/Bruce/wiki/BLE#nrf24-jammer)
+- [X] 2.4G Spectrum
+- [ ] Mousejack
+</details>
+
+<details>
+  <summary><h2>Scripts</h2></summary>
+
+- [X] [JavaScript Interpreter](https://github.com/pr3y/Bruce/wiki/Interpreter) [Credits to justinknight93](https://github.com/justinknight93/Doolittle)
+</details>
+
+<details>
+  <summary><h2>Others</h2></summary>
+
+- [X] Mic Spectrum
+- [X] QRCodes
+    - [x] Custom
+    - [x] PIX (Brazil bank transfer system)
+- [x] [SD Card Mngr](https://github.com/pr3y/Bruce/wiki/Others#sd-card-mngr)
+    - [x] View image (jpg)
+    - [x] File Info
+    - [x] [Wigle Upload](https://github.com/pr3y/Bruce/wiki/Wardriving#how-to-upload)
+    - [x] Play Audio
+    - [x] View File
+- [x] [LittleFS Mngr](https://github.com/pr3y/Bruce/wiki/Others#littlefs-mngr)
+- [x] [WebUI](https://github.com/pr3y/Bruce/wiki/Others#webui)
+    - [x] Server Structure
+    - [x] Html
+    - [x] SDCard Mngr
+    - [x] Spiffs Mngr
+- [x] Megalodon
+- [x] [BADUsb (New features, LittleFS and SDCard)](https://github.com/pr3y/Bruce/wiki/Others#badusb)
+- [x] USB Keyboard - Cardputer and T-Deck Only
+- [x] [Openhaystack](https://github.com/pr3y/Bruce/wiki/Others#openhaystack)
+- [x] [iButton](https://github.com/pr3y/Bruce/wiki/Others#ibutton)
+- [x] [LED Control](https://github.com/pr3y/Bruce/wiki/Others#led-control)
+</details>
+
+<details>
+  <summary><h2>Clock</h2></summary>
+
+- [X] RTC Support
+- [X] NTP time adjust
+- [X] Manual adjust
+</details>
+
+<details>
+  <summary><h2>Connect (ESPNOW)</h2></summary>
+
+- [X] Send File
+- [X] Receive File
+- [X] Send Commands
+- [X] Receive Commands
+</details>
+
+<details>
+  <summary><h2>Config</h2></summary>
+
+- [x] Brightness
+- [x] Dim Time
+- [x] Orientation
+- [X] UI Color
+- [x] Boot Sound on/off
+- [x] Clock
+- [x] Sleep
+- [x] Restart
+</details>
 ## 🧠 What’s Inside – All-in-One Integration
 
 This board was designed from the ground up to include:
