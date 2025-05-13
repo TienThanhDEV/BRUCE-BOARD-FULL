@@ -1,6 +1,6 @@
 # Bruce Board All-in-One
 
-**Bruce Board All-in-One** is a compact, integrated development board designed to unleash the full power of [Bruce Firmware](https://github.com/0xbruce/bruce) — a flexible and offensive-capable firmware built for ESP32. Whether you're into red teaming, wireless experimentation, or embedded development, this board gives you everything in one place — no breadboards, no wiring, no mess.
+**Bruce Board All-in-One** is a compact, integrated development board designed to unleash the full power of [[Bruce Firmware](https://github.com/0xbruce/bruce)](https://bruce.computer/) — a flexible and offensive-capable firmware built for ESP32. Whether you're into red teaming, wireless experimentation, or embedded development, this board gives you everything in one place — no breadboards, no wiring, no mess.
 
 ![3D_View](https://github.com/user-attachments/assets/a8bf4128-304f-4c34-9406-8a43b343cbd5)
 
